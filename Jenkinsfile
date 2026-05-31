@@ -3,6 +3,9 @@ pipeline {
     tools {
         maven 'maven 3.9.12'
     }
+    environment {
+        DOCKER_IMAGE = "demo-app"
+    }
 
     stages {
         stage('Git Checkout') {
